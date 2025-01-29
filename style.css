@@ -32,7 +32,7 @@ body {
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.8)
     ),
-    url("images/pexels-bertellifotografia-3321797.webp");
+    url("/images/pexels-bertellifotografia-3321797.webp");
   background-position: center;
   background-size: cover;
   color: var(--color-white);
