@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conferência de Tecnologia do Futuro 2025</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -16,9 +16,37 @@
           Junte-se às principais vozes em IA, computação em nuvem e
           desenvolvimento web
         </p>
-        <a href="#register" class="btn">Registre-se Agora</a>
+        <form class="cta-form" id="formRegistro">
+          <input type="email" placeholder="Digite seu e-mail" required>
+          <button type="submit">Garantir Minha Vaga</button>
+      </form>
+      <div class="contador">
+          Vagas restantes: <span id="vagas">50</span>
+      </div>
       </div>
     </section>
+
+    <section class="contador-regressivo">
+      <h2>Faltam Apenas:</h2>
+      <div id="timer">
+          <div class="time-box">
+              <span id="dias">00</span>
+              <small>Dias</small>
+          </div>
+          <div class="time-box">
+              <span id="horas">00</span>
+              <small>Horas</small>
+          </div>
+          <div class="time-box">
+              <span id="minutos">00</span>
+              <small>Minutos</small>
+          </div>
+          <div class="time-box">
+              <span id="segundos">00</span>
+              <small>Segundos</small>
+          </div>
+      </div>
+  </section>
 
     <!-- Speakers Section -->
     <section class="speakers">
@@ -115,5 +143,7 @@
       </p>
       <a href="#register" class="btn">Registre-se Agora</a>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
